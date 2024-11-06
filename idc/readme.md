@@ -1,6 +1,3 @@
-此项目文档由唐总提供，svn ： 
-doc：http://windows-98u7boe/svn/TN-IDC/doc
-code：http://windows-98u7boe/svn/TN-IDC/java/trunk/idc_teenet
 
 4个Job ：拉取频率来自 scheduler_cron
 1，BreakPointTask 高频数据断点续传
