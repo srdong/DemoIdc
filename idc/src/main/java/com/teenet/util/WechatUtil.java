@@ -21,7 +21,7 @@ import java.util.Map;
 @Slf4j
 public class WechatUtil {
     private static String accessToken = null;
-    private static final String smsUrl = "http://utf8.api.smschinese.cn/?Uid=teenet@123&Key=qwertyuiopasdfghjkl1";
+    private static final String smsUrl = "http://utf8.api.smschinese.cn/?Uid=xxx&Key=xxx";
     private static final Boolean SEND_SMS;
 
     static {
