@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teenet.mapper.PullTimeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.teenet.entity.database.PullTime">
+        <id column="id" property="id" />
+        <result column="in_time" property="inTime" />
+        <result column="success_is" property="successIs" />
+        <result column="type" property="type" />
+        <result column="content" property="content" />
+        <result column="upload_again_time" property="uploadAgainTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, in_time,success_is,type,content,upload_again_time
+    </sql>
+
+
+    <select id="maxTime" resultType="java.time.LocalDateTime">
+        select max(in_time) from pull_time where type = 1
+    </select>
+
+</mapper>

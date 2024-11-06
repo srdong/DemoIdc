@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teenet.mapper.BaseInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.teenet.entity.database.BaseInfo">
+        <id column="id" property="id" />
+        <result column="idc_name" property="idcName" />
+        <result column="idc_address" property="idcAddress" />
+        <result column="idc_owner" property="idcOwner" />
+        <result column="idc_contact" property="idcContact" />
+        <result column="idc_owner_phone" property="idcOwnerPhone" />
+        <result column="idc_operator" property="idcOperator" />
+        <result column="idc_operator_contact" property="idcOperatorContact" />
+        <result column="idc_operator_contact_phone" property="idcOperatorContactPhone" />
+        <result column="idc_area_m2" property="idcAreaM2" />
+        <result column="idc_service_start" property="idcServiceStart" />
+        <result column="idc_storey" property="idcStorey" />
+        <result column="idc_total_floors" property="idcTotalFloors" />
+        <result column="idc_design_cabinets_number" property="idcDesignCabinetsNumber" />
+        <result column="idc_actual_cabinets_number" property="idcActualCabinetsNumber" />
+        <result column="idc_design_total_power_kw" property="idcDesignTotalPowerKw" />
+        <result column="idc_facility_dieselgenerator" property="idcFacilityDieselgenerator" />
+        <result column="idc_facility_cabinet" property="idcFacilityCabinet" />
+        <result column="idc_facility_office" property="idcFacilityOffice" />
+        <result column="idc_facility_fossilgenerator" property="idcFacilityFossilgenerator" />
+        <result column="idc_facility_renewable" property="idcFacilityRenewable" />
+        <result column="idc_facility_storage" property="idcFacilityStorage" />
+        <result column="idc_facility_coldsite" property="idcFacilityColdsite" />
+        <result column="idc_submetering_supply" property="idcSubmeteringSupply" />
+        <result column="idc_submetering_dieselgenerator" property="idcSubmeteringDieselgenerator" />
+        <result column="idc_submetering_itec" property="idcSubmeteringItec" />
+        <result column="idc_submetering_cabinet" property="idcSubmeteringCabinet" />
+        <result column="idc_submetering_office" property="idcSubmeteringOffice" />
+        <result column="idc_submetering_fossilgenerator" property="idcSubmeteringFossilgenerator" />
+        <result column="idc_submetering_renewable" property="idcSubmeteringRenewable" />
+        <result column="idc_submetering_storage" property="idcSubmeteringStorage" />
+        <result column="idc_submetering_coldsite" property="idcSubmeteringColdsite" />
+        <result column="idc_submetering_temperaturefield" property="idcSubmeteringTemperaturefield" />
+        <result column="idc_submetering_airconditioning" property="idcSubmeteringAirconditioning" />
+        <result column="idc_submetering_lighting" property="idcSubmeteringLighting" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, idc_name, idc_address, idc_owner, idc_contact, idc_owner_phone, idc_operator, idc_operator_contact, idc_operator_contact_phone, idc_area_m2, idc_service_start, idc_storey, idc_total_floors, idc_design_cabinets_number, idc_actual_cabinets_number, idc_design_total_power_kw, idc_facility_dieselgenerator, idc_facility_cabinet, idc_facility_office, idc_facility_fossilgenerator, idc_facility_renewable, idc_facility_storage, idc_facility_coldsite, idc_submetering_supply, idc_submetering_dieselgenerator, idc_submetering_itec, idc_submetering_cabinet, idc_submetering_office, idc_submetering_fossilgenerator, idc_submetering_renewable, idc_submetering_storage, idc_submetering_coldsite, idc_submetering_temperaturefield, idc_submetering_airconditioning, idc_submetering_lighting
+    </sql>
+
+</mapper>

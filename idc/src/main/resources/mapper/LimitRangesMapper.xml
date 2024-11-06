@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teenet.mapper.LimitRangesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.teenet.entity.database.LimitRanges">
+        <id column="id" property="id" />
+        <result column="lower_limit" property="lowerLimit" />
+        <result column="upper_limit" property="upperLimit" />
+        <result column="val1" property="val1" />
+        <result column="val2" property="val2" />
+        <result column="val3" property="val3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, lower_limit, upper_limit, val1, val2, val3
+    </sql>
+
+</mapper>

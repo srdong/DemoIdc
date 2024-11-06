@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teenet.mapper.DeviceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.teenet.entity.database.Device">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="name_desc" property="nameDesc" />
+        <result column="position" property="position" />
+        <result column="meter_code" property="meterCode" />
+        <result column="meter_category" property="meterCategory" />
+        <result column="meter_unit" property="meterUnit" />
+        <result column="device_category" property="deviceCategory" />
+        <result column="device_small_class" property="deviceSmallClass" />
+        <result column="device_small_class" property="deviceSmallClass" />
+        <result column="real_is" property="realIs" />
+        <result column="need_upload" property="needUpload" />
+        <result column="mapping" property="mapping" />
+        <result column="coe" property="coe" />
+        <result column="current_val" property="currentVal" />
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name,name_desc, position, meter_code, meter_category, meter_unit, device_category, device_small_class,real_is,need_upload,mapping,coe,current_val
+    </sql>
+
+</mapper>

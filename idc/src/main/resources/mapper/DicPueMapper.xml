@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teenet.mapper.DicPueMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.teenet.entity.database.DicPue">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="denominator" property="denominator" />
+        <result column="denominator_formula" property="denominatorFormula" />
+        <result column="molecular" property="molecular" />
+        <result column="molecular_formula" property="molecularFormula" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, denominator,denominator_formula, molecular, molecular_formula
+    </sql>
+
+</mapper>
